@@ -11,27 +11,26 @@
 </head>
 <body>
 <header>
-        <div class="header__top">
-            <div class="container">
-                <ul class="menu__top reset">
-                    <li><a href="#">Оплата и доставка</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+    <div class="header__top">
+        <div class="container">
+            <ul class="menu__top reset">
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
             <div class="search">
                 <div class="search__item1">Поиск</div>
            </div>
-           
-        <div class="header__formCont">
-          <form action="/" method="post" class="header__form">
-            <input type="search" name="s">
-            <button>Отправить</button>
-          </form> 
-        </div>
-        
+            <div class="header__formCont">
+                  <form action="/" method="post" class="header__form">
+                        <input type="search" name="s">
+                        <button>Отправить</button>
+                  </form> 
+                  <span class="searchIcon"></span>
             </div>
-         </div>
+        </div>
+     </div>
         
     <div class="header__bottom">
         <div class="container">
@@ -39,6 +38,11 @@
            <div class="logo"><a href="#"><img src="images/Shoe.png" alt="логотип"></a></div>
            <div class="logo__name"><a href="#"><img src="images/Shoemer.png" alt="имя логотипа"></a></div>
           
+           <div class="toggleMobMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
            
             <ul class="menu__bottom reset">
                 <li><a href="#">Мужская</a></li>
@@ -54,7 +58,7 @@
    </div>
 </header>
 
-<main class="content">
+<main class="content col-lg-12">
 <div class="container">
     <ul class="breadcrumb reset">
         <li class="season"><a href="#">Каталог </a></li>
@@ -66,23 +70,193 @@
 <div class="container">
     <h1>Женская обувь (весна-осень)</h1>
 </div>
-        
-        <div class="container">
-         
-         
+       
+       <div class="container">
           <select name="sort" id="sort">
              <option value="1">Сортировка по имени (Аa-Яz)</option>
              <option value="1">1</option>
              <option value="1">1</option>
-         </select>
-         
+          </select>
+       </div>
+        
+        <div class="container">
+            <div class="row col-lg-3 col-md-3">
+                 <div class="sidebar">
+                     <div class="accordion">
+                        <div class="filters">Фильтры</div>
+                         <div class="accordion__item">
+                           
+                            <span class="accordion__itemTitle">Размер</span>
+                                 <div class="accordion__checkboxWrap">
+                                 <div class="inputWrap">
+                                     <input id="size" type="checkbox">
+                                     <label for="size">40</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="size" type="checkbox">
+                                     <label for="size">41</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="size" type="checkbox">
+                                     <label for="size">42</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="size" type="checkbox">
+                                     <label for="size">43</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="size" type="checkbox">
+                                     <label for="size">44</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="size" type="checkbox">
+                                     <label for="size">45</label>
+                                 </div>
+                                 </div>
+                         </div>
+             
+                         <div class="accordion__item">
+                             <span class="accordion__itemTitle">Бренд</span>
+                                 <div class="accordion__checkboxWrap">
+                                 <div class="inputWrap">
+                                     <input id="brand" type="checkbox">
+                                     <label for="brand">Molto</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="brand" type="checkbox">
+                                     <label for="brand">Shhuna</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="brand" type="checkbox">
+                                     <label for="brand">Plari Brand</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="brand" type="checkbox">
+                                     <label for="brand">Crosswood</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="brand" type="checkbox">
+                                     <label for="brand">Binari</label>
+                                 </div>
+                                 </div>
+                         </div>
+             
+                         <div class="accordion__item">
+                             <span class="accordion__itemTitle">Сезон</span>
+                                 <div class="accordion__checkboxWrap">
+                                 <div class="inputWrap">
+                                     <input id="season" type="checkbox">
+                                     <label for="season">Весна-осень</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="season" type="checkbox">
+                                     <label for="season">Лето</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="season" type="checkbox">
+                                     <label for="season">Зима</label>
+                                 </div>
+                                 </div>
+                        </div>
+                 </div>
+                 
+                 
+                 <div class="accordion">
+                       <div class="filters">Каталог</div>
+                        <div class="accordion__item">
+                            <span class="accordion__itemTitle">Мужская обувь</span>
+                                 <div class="accordion__checkboxWrap">
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Ботинки</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Туфли</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Мокасины</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Кеды</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Кроссовки</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Слипоны</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="male" type="checkbox">
+                                     <label for="male">Сапоги</label>
+                                 </div>
+                                 </div>
+                         </div>
+             
+                         <div class="accordion__item">
+                             <span class="accordion__itemTitle">Женская обувь</span>
+                                 <div class="accordion__checkboxWrap">
+                                 <div class="inputWrap">
+                                     <input id="female" type="checkbox">
+                                     <label for="female">Сапоги</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="female" type="checkbox">
+                                     <label for="female">Ботинки</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="female" type="checkbox">
+                                     <label for="female">Туфли</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="female" type="checkbox">
+                                     <label for="female">Балетки</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="female" type="checkbox">
+                                     <label for="female">Босоножки</label>
+                                 </div>
+                                 </div>
+                         </div>
+             
+                         <div class="accordion__item">
+                             <span class="accordion__itemTitle">Детская обувь</span>
+                                 <div class="accordion__checkboxWrap">
+                                 <div class="inputWrap">
+                                     <input id="kids" type="checkbox">
+                                     <label for="kids">Ботинки</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="kids" type="checkbox">
+                                     <label for="kids">Туфли</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="kids" type="checkbox">
+                                     <label for="kids">Сапоги</label>
+                                 </div>
+                                 <div class="inputWrap">
+                                     <input id="kids" type="checkbox">
+                                     <label for="kids">Кеды</label>
+                                 </div>
+                                 </div>
+                         </div>
+                 </div>
+                 
+                 <div class="btn col-lg-12 col-md-12"><a href="#">Как определить размер?</a></div>
+                 
+             </div> 
+        </div>
+                 
          <div class="row">
          
-         <div class="thumbnails col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <div class="thumbnails  col-lg-9 col-md-9 col-sm-12 col-xs-12">
          
          
-         
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/1.png"></a></div>
                <div class="special"><img src="images/special.png"></div>
                <div class="item">
@@ -92,7 +266,7 @@
            </div>
            
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/2.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">kreme ring loafers</a></p>
@@ -102,7 +276,7 @@
            
            
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/3.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">nickle mules</a></p>
@@ -111,7 +285,7 @@
             </div>
           
           
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/4.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">texas faux fur slip</a></p>
@@ -120,7 +294,7 @@
            </div>
            
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/5.png"></a></div>
                <div class="special"><img src="images/special.png"></div>
                <div class="item">
@@ -130,7 +304,7 @@
            </div>
            
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/6.png"></a></div>
                 <div class="item">
                    <p class="desc"><a href="#">nickle mules</a></p>
@@ -140,7 +314,7 @@
                
         
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div shoe><a href="#"><img src="images/7.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">texas faux fur slip</a></p>
@@ -148,7 +322,7 @@
                </div>
            </div>
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/8.png"></a></div>
                <div class="special"><img src="images/special.png"></div>
                <div class="item">
@@ -157,7 +331,7 @@
                </div>
            </div>
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/9.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">nickle mules</a></p>
@@ -165,7 +339,7 @@
                </div>
            </div>
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/10.png"></a></div>
                <div class="special"><img src="images/special.png"></div>
                <div class="item">
@@ -175,7 +349,7 @@
            </div>
            
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/11.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">kreme ring loafers</a></p>
@@ -183,7 +357,7 @@
                </div>
            </div>
            
-           <div class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-6">
+           <div class="thumbnail col-lg-4 col-md-4 col-sm-4 col-xs-6">
                <div class="shoe"><a href="#"><img src="images/12.png"></a></div>
                <div class="item">
                    <p class="desc"><a href="#">nickle mules</a></p>
@@ -206,7 +380,6 @@
 <div class="container">
     <h1 class="season">Женская коллекция "весна-осень"</h1>
 </div>
-
 
 <div class="container">
     <p class="history">Древние евреи делали обувь из кожи, шерсти, тростника и дерева. Известно было три типа обуви — сандалии, башмаки (они закрывали стопу до подъёма, всегда имели каблуки, а на ноге удерживались с помощью шнурков, которые завязывали красивым бантиком) и сапоги, в которых ходили путешественники и солдаты. У богатых людей обувь бывала чрезвычайно роскошной — в каблуки башмаков, например, часто вкладывали маленькие флакончики с духами. С ношением обуви было связано множество традиций, запретов и предписаний. Так, ходить босиком обычно считалось крайне неприличным, но в определённых случаях полагалось снимать обувь — например, при восхождении на Храмовую гору в Иерусалиме или в присутствии гостя, которому хозяева хотели выразить своё особое уважение. Обувь снимали также, чтобы подчеркнуть важность и бесповоротность принимаемого решения — например, в суде или при передаче недвижимого имущества. В Библии упомянут ещё один любопытный обычай, связанный с разуванием. Если человек умирал, оставив жену бездетной, его брат (или другой родственник) должен был жениться на ней. В случае отказа он подвергался публичному унижению: невестка, от которой он отказался, при всём народе снимала с его ноги обувь и плевала ему в лицо со словами: «Так поступают с человеком, который не созидает дома брату своему!».</p>
